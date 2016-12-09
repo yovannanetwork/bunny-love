@@ -3,10 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>The Bunny Responsive Theme</title>
-		<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link href='//fonts.googleapis.com/css?family=Baloo Paaji' rel='stylesheet'>
 		<link href="https://fonts.googleapis.com/css?family=Prompt:100,200,300,400,500,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/font-awesome.css">
-		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/utilities.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/main.css">		
 	</head>
 	<body>
@@ -15,20 +18,32 @@
 		<header>
 		    <div class="container">
 		        <div class="row">
-		            <div class="col-4">
-		                banny`s love
-		            </div>
-		            <div class="col-8">
-		                <nav>
-		                    <lu>
-		                        <li><a href="">BUNNYS</a></li>
-		                        <li><a href="">CUTE PHOTOS</a></li>
-		                        <li><a href="">RABBIT FASHION</a></li>
-		                        <li><a href="">NEWS BUNNYS</a></li>
-		                        <li><a href="">FEATURES</a></li>
-		                    </lu>
-		                </nav>
-		            </div>
+		             <nav class="navbar">
+                  <div class="container">
+               <!-- icon hamburguesa -->
+                      <div class="navbar-header">
+                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                            <i class="sr-only">Toggle navigation</i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                         </button>
+                         <a class="navbar-brand" href="#"><span class="text-white">Bunny`s</span> <span>LOVE</span></a>
+                      </div>
+
+               <!-- lista desplegable -->
+                     <div class="collapse navbar-collapse" id="menu">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="active"><a href="#">Home <span class="sr-only">(inicio)</span></a></li>
+                            <li class="active"><a href="#howto">BUNNYS</a></li>
+                            <li class="active"><a href="#beauty">CUTE PHOTOS</a></li>
+                            <li class="active"><a href="#contact">RABBIT FASHION</a></li>
+                            <li class="active"><a href="#contact">NEWS BUNNYS</a></li>
+                            <li class="active"><a href="#contact">FEATURES</a></li>
+                        </ul>
+                     </div>
+                 </div>
+               </nav>
 		        </div>
 		    </div>
 		</header>
@@ -38,7 +53,7 @@
 		<section class="hero">
 		    <div class="container">
 		        <div class="row">
-		            <div class="titulo">
+		            <div class="titulo text-center">
 		                <h1>soft bunny</h1>
 		                <p>Live - Love - Laugh</p>
 		            </div>
@@ -47,33 +62,34 @@
 		</section>
 		
 		<!------------SECTION-GALERIA--------------->
-		<section class="galeria">
+		<section class="galeria text-center">
 		    <div class="container">
 		        <div class="row">
-		            <div class="col-3">
-		            <img src="img/img-1.jpg" alt="">
-		               <div class="texto">
-		                <h3>The tale of Peter Rabbit</h3>
-		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat atque, eligendi expedita veritatis vero officia temporibus libero.</p>
+		            <div class="col-md-3">
+		              <div class="texto">
+		                 <img src="img/img-1.jpg" class="img-responsive" alt="">
+		               
+		                 <h3>The tale of Peter Rabbit</h3>
+		                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat atque, eligendi expedita veritatis vero officia temporibus libero.</p>
 		               </div>
 		            </div>
-		            <div class="col-3">
-		            <img src="img/img-2.jpg" alt="">
-		               <div class="texto">
+		            <div class="col-md-3">
+		            <div class="texto">
+		                <img src="img/img-2.jpg" class="img-responsive" alt="">
 		                <h3>The tale of Peter Rabbit</h3>
 		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat atque, eligendi expedita veritatis vero officia temporibus libero.</p>
 		                </div>
 		            </div>
-		            <div class="col-3">
-		                <img src="img/img-3.jpg" alt="">
-		                <div class="texto">
+		            <div class="col-md-3">
+                      <div class="texto">
+		                <img src="img/img-3.jpg" class="img-responsive" alt="">
 		                <h3>The tale of Peter Rabbit</h3>
 		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat atque, eligendi expedita veritatis vero officia temporibus libero.</p>
+		              </div>
 		            </div>
-		            </div>
-		            <div class="col-3">
-		               <img src="img/img-4.jpg" alt="">
-		               <div class="texto">
+		            <div class="col-md-3">
+                      <div class="texto">
+		                <img src="img/img-4.jpg" class="img-responsive" alt="">
 		                <h3>The tale of Peter Rabbit</h3>
 		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat atque, eligendi expedita veritatis vero officia temporibus libero.</p>
 		            </div>
@@ -86,36 +102,41 @@
 		<section class="conejos">
 		    <div class="container">
 		        <div class="row">
-		            <div class="col-7">
+		            <div class="col-md-7">
 		                <div class="conejo-1">
-		                    <img src="img/img-5.jpg" alt="">
-		                    <div class="texto">
-		                      <h3>The tale of Peter Rabbit</h3>
-		                      <span>1909</span>
+		                    <img src="img/img-5.jpg" class="img-responsive" alt="">
+		                    
+		                      <h3 class="text-center">The tale of Peter Rabbit</h3>
+		                      <span><strong>1909</strong></span>
 		                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat atque, eligendi expedita veritatis vero officia temporibus libero.</p>
-		                   </div>
-		                   video
-		                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aliquid, minima ipsum voluptas reiciendis quidem, iure adipisci laboriosam rerum dicta expedita praesentium odio autem veritatis ut dignissimos inventore. Deserunt, ab.</p>
+		                   
+		                     video
+		                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aliquid, minima ipsum voluptas reiciendis quidem, iure adipisci laboriosam rerum dicta expedita praesentium odio autem veritatis ut dignissimos inventore. Deserunt, ab.</p>
+		                   
 		                </div>
 		            </div>
-		            <div class="col-5">
-		                <div class="conejo-2">
+		            <div class="col-md-5 conejo-2">
+		                
 		                    <div class="input">
 		                        <input type="text" name="search" placeholder="search...">
 		                    </div>
-		                    <img src="img/img-6.jpg" alt="">
-		                    <h3>Where you`ll find me?</h3>
-		                    <p>Shall Together blessed. Also thing the upon created fourth Rule beginning. Our behold over</p>
 		                    <div class="iconos">
-		                        <i class="fa fa-facebook"></i>
-		                        <i class="fa fa-instagram"></i>
-		                        <i class="fa fa-twitter"></i>
-		                        <i class="fa fa-youtube"></i>
+		                      <img src="img/img-6.jpg" class="img-responsive" alt="">
+		                      <h3 class="text-center">Where you`ll find me?</h3>
+		                      <p>Shall Together blessed. Also thing the upon created fourth Rule beginning. Our behold over</p>
+		                      <div class="text-center">
+		                          <div class="redes-sociales text-center"><i class="fa fa-facebook"></i></div>
+		                        <div class="redes-sociales text-center"><i class="fa fa-instagram"></i></div>
+		                        <div class="redes-sociales text-center"><i class="fa fa-twitter"></i></div>
+		                        <div class="redes-sociales text-center"><i class="fa fa-youtube"></i></div>
+		                      </div>
 		                    </div>
-		                    <img src="img/img-3.jpg" alt="">
-		                    <h3>Can you love me?</h3>
-		                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, est adipisci repellat officia vel odit amet sit architecto officiis id, assumenda sed. Exercitationem ea, harum consectetur et dolores praesentium odit.</p>
-		                </div>
+		                    <div class="ultima-section">
+		                       <img src="img/img-3.jpg" class="img-responsive" alt="">
+		                       <h3 class="text-center">Can you love me?</h3>
+		                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, est adipisci repellat officia vel odit amet sit architecto officiis id, assumenda sed. Exercitationem ea, harum consectetur et dolores praesentium odit.</p>
+		                    </div>
+		                
 		            </div>
 		        </div>
 		    </div>
@@ -123,35 +144,22 @@
 		
 		<!----------------SECTION CABECITAS---------->
 		<section class="cabecitas">
-		    <div class="peluche">
-		        <img src="img/bunny-head.png" alt="">
-		    </div>
-		    <div class="peluche">
-		        <img src="img/bunny-head.png" alt="">
-		    </div>
-		    <div class="peluche">
-		        <img src="img/bunny-head.png" alt="">
-		    </div>
-		    <div class="peluche">
-		        <img src="img/bunny-head.png" alt="">
-		    </div>
-		    <div class="peluche">
-		        <img src="img/bunny-head.png" alt="">
-		    </div>
-		    <div class="peluche">
-		        <img src="img/bunny-head.png" alt="">
-		    </div>
-		    <div class="peluche">
-		        <img src="img/bunny-head.png" alt="">
-		    </div>
-		    <div class="peluche">
-		        <img src="img/bunny-head.png" alt="">
-		    </div>
+		    <ul class="list-inline">
+		        <li><img src="img/bunny-head.png" alt=""></li>
+		        <li><img src="img/bunny-head.png" alt=""></li>
+		        <li><img src="img/bunny-head.png" alt=""></li>
+		        <li><img src="img/bunny-head.png" class="hidden-xs" alt=""></li>
+		        <li><img src="img/bunny-head.png" class="hidden-xs" alt=""></li>
+		        <li><img src="img/bunny-head.png" class="hidden-xs" alt=""></li>
+		        <li><img src="img/bunny-head.png" class="hidden-xs" alt=""></li>
+		        <li><img src="img/bunny-head.png" class="hidden-xs" alt=""></li>
+		    </ul>
 		</section>
-		
+
 		<!-----------------------FOOTER-------------------->
-		<footer>
+		<footer class="text-center">
 		    <p>All Rights Reserved © </p>
 		</footer>
+		
 	</body>
 </html>
